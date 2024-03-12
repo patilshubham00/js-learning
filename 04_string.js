@@ -28,3 +28,27 @@ var firstName = "Shubham";
 var lastName = " Patil";
 var resultConcat = firstName.concat(lastName);
 console.log("Concat result is:", resultConcat);
+
+
+console.log("========== replace() ==================");
+var greet = "Good Morning";
+const afterReplace = greet.replace("Morning","Afternoon");
+console.log(`After replace starting is : ${afterReplace}`);
+
+
+console.log("========== toUpperCase() ==================");
+var greet ="Good Morning";
+var greetInUpperCase = greet.toUpperCase();
+console.log(`To Upper Case Is : ${greetInUpperCase}`);
+
+
+console.log("========== trim() ==================");
+var greet = "   Good Morning   ";
+console.log(`${greet} it's length is : ${greet.length}`);
+
+var len = greet.length;
+greet.trim();
+
+console.log("========== Slice Method() ==================");
+var str = "Developer World!";
+console.log(str.slice(0,10));
