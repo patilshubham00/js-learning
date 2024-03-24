@@ -61,7 +61,7 @@ console.log(subArray);
 
 
 
-console.log("==================== Step 7 ====================");
+console.log("==================== Step 8 ====================");
 
 var fruits_seasonal = ["Banana" , "Orange" , "Apple" , "Mango" , "Water Melon"];
 console.log(fruits_seasonal);
