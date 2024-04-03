@@ -43,9 +43,10 @@ console.table(sbiDetails);
 
 console.log(`=============== Traverse the merged object using for in loop ===============`);
 
-const traversing = [sbiDetails];
-for (let index = 0; index < traversing.length; index++) {
-    const element = traversing[index];
-    console.log(element);
+for (const key in sbiDetails) {
+    if (Object.hasOwnProperty.call(sbiDetails, key)) {
+        const element = sbiDetails[key];
+        console.log(`${key}    : ${element}`);
+        
+    }
 }
-
