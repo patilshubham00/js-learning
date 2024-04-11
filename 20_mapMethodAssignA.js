@@ -27,6 +27,9 @@ console.log(arrayCube);
 console.log(`========== Step 3 ==========` );
 
 
-arrayNumbers.forEach( (element, index, arrayNumbers) => {
-    console.log(element, index, arrayNumbers);
-    } );
+
+const indexArrayNumbers = arrayNumbers.map( (currentValue,index)=>{
+    return currentValue+index;
+} );
+
+console.log(indexArrayNumbers)
