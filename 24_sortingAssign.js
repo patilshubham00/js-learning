@@ -26,8 +26,10 @@ class Employees{
 
     console.log(`========== Step 1 ==========` );
 
-    arrayEmps.sort();
-    arrayEmps.reverse();
+    arrayEmps.sort((p1, p2)=>{
+        return p1.emp_id<=p2.emp_id ? 1 : -1
+    });
+    
 
     arrayEmps.forEach(element => {
         console.log(element.emp_id, element.emp_name, element.emp_dept);
