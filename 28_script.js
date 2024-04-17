@@ -55,3 +55,34 @@ console.log('Remove an element');
 const skillUlNode = document.querySelector('#skill');
 const JsLiNode = document.querySelector('#js');
 skillUlNode.removeChild(JsLiNode);
+
+
+function eventClick(){
+    console.log("Hey.. he clicked me...");
+}
+
+//const addButton = document.querySelector('#add')
+//addButton.addEventListener('click',() => {
+//   console.log('Add button click.....');
+//} );
+
+const addButton = document.querySelector('#add');
+addButton.addEventListener('click', ()=>{
+  const num = prompt("Enter the valid number to perform square", 1);
+  const elementPara = document.createElement('p');
+  const textNodeSquare = document.createTextNode(`Number ${num} and it's square is ${num*num}`)
+  elementPara.style.color= 'orange';
+  elementPara.appendChild(textNodeSquare)
+  const squareResultElement = document.querySelector('.square-result');
+  squareResultElement.appendChild(elementPara);
+});
+
+
+
+
+
+
+
+
+
+
